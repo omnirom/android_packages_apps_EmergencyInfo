@@ -24,7 +24,6 @@
 
     <!-- Base emergency theme. -->
     <style name="AppThemeEmergency" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:preferenceCategoryStyle">@style/AppTheme.PreferenceCategoryStyle</item>
         <item name="colorPrimaryDark">@color/emergency_primary_dark</item>
         <item name="colorPrimary">@color/emergency_primary</item>
         <item name="textColorActionBar">@color/tab_text_color</item>
@@ -55,9 +54,9 @@
     </style>
 
     <!-- Preferences -->
-    <style name="AppTheme.PreferenceCategoryStyle" parent="Preference.Category">
+    <!--<style name="AppTheme.PreferenceCategoryStyle" parent="Preference.Category">
         <item name="android:layout">@layout/custom_preference_category_layout</item>
-    </style>
+    </style>-->
 
     <!--<style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
         <item name="android:scrollbars">vertical</item>
@@ -69,7 +68,7 @@
         <item name="android:scrollbars">vertical</item>
     </style>
 
-    <style name="FooterPreference" parent="PreferenceTheme">
+    <!--<style name="FooterPreference" parent="PreferenceTheme">
         <item name="android:layout">@layout/preference_footer</item>
         <item name="allowDividerAbove">true</item>
     </style>
@@ -77,5 +76,5 @@
     <style name="PreferenceCategory" parent="@style/Preference.Category.Material">
         <item name="allowDividerAbove">true</item>
         <item name="android:layout">@layout/preference_category_material_settings</item>
-    </style>
+    </style>-->
 </resources>
