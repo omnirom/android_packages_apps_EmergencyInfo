@@ -45,6 +45,7 @@ import com.android.emergency.R;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settingslib.Utils;
 
 import java.util.List;
 
@@ -149,7 +150,9 @@ public class ContactPreference extends Preference {
             icon = new CircleFramedDrawable(mContact.getPhoto(),
                     (int) getContext().getResources().getDimension(R.dimen.circle_avatar_size));
         } else {
-            icon = getContext().getResources().getDrawable(R.drawable.ic_account_circle);
+            Drawable d = getContext().getResources().getDrawable(R.drawable.ic_account_circle_large);
+            d.mutate().setTint(Utils.getColorAttr(getContext(), android.R.attr.colorControlNormal));
+            icon = d;
         }
         setIcon(icon);
     }
